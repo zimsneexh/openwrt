@@ -143,6 +143,7 @@ sophos,ap100c)
 wallys,dr531)
 	ubootenv_add_uci_config "/dev/mtd1" "0x0" "0xf800" "0x10000"
 	;;
+zte,mf282|\
 zte,mf286|\
 zte,mf286a|\
 zte,mf286r)

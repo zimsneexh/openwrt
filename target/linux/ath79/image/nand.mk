@@ -369,6 +369,14 @@ define Device/zte_mf286r
 endef
 TARGET_DEVICES += zte_mf286r
 
+define Device/zte_mf282
+  $(Device/zte_mf286_common)
+  DEVICE_MODEL := MF282
+  DEVICE_PACKAGES += ath10k-firmware-qca988x-ct kmod-usb-net-qmi-wwan \
+        kmod-usb-serial-option uqmi
+endef
+TARGET_DEVICES += zte_mf282
+
 define Device/zyxel_nbg6716
   SOC := qca9558
   DEVICE_VENDOR := ZyXEL
